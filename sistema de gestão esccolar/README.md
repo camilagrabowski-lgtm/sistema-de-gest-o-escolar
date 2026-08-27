@@ -50,38 +50,13 @@ O sistema deve validar as informações.
   - Excluir os funcionários
   - Excluir os cursos 
   - Excluir as matrículas
-
-  - O sistema deve permitir realizar login
-  - O sistema deve permitir o usuário a sair da conta
-  - O sistema deve permitir alterar os dados do próprio usuário
-  - O sistema deve permitir pesquisar alunos
-  - O sistema deve permitir pesquisar os cursos
-  - o sistema deve permitir cancelar uma matrícula
-  - O sistema deve permitir filtrar os alunos por curso
-  - O sistema deve permitir filtrar os funcionários por curso
-  - O sistema deve permitir vizualizar a quantidade de alunos cadastrados
-  - O sistema deve permitr vizualizar a quantidade de matrículas realizadas
-  - O sistema deve permitir consultar o histórico de matrículas do aluno
-  - O sistema deve permitir consultar os alunos matriculados em um curso
-  - O sistema deve permitir consultar os cursos em que um aluno está matriculado
-  - O sistema deve permitir selecionar o período da matrícula
-  - O sistema deve selecionar o prefessor responsável pelo curso
-  - O sistema deve permitir alterar a situação de um curso
-  - O sistema deve permitir cancelar uma matrícula
-  - O sistema deve permitir alterar a senha do usuário
-  - O sistema deve permitir ordenar a lista de alunos
-  - O sistema deve permitir ordenar a lista de cursos
-  - O sistema deve permitir ordenar a lista de funcionários
-  - O sistema deve permitir buscar uma matrícula específica
-  - O sistema deve permitir visualizar a data de uma matrícula
-  - O sistema deve permitir visualizar a situação do curso
-  - O sistema deve permitir visualizar o professor responsável pelo curso
-  - O sistema deve permitir visualizar a descrição do curso
-  - O sistema deve permitir visualizar a duração do curso
-  - O sistema deve permitir visualizar a carga horária do curso.
-  - O sistema deve permitir consultar os dados de contato de um aluno.
-
-
+  - Login de usuários 
+  - Buscar aluno pelo nome
+  - Buscar aluno pelo CPF 
+  - Buscar funcionário pelo nome 
+  - Buscar funcionários pelo CPF
+  - Mostrar os cursos em que cada aluno está matrículado
+  - Mostrar os alunos que estão matrículados em cada curso
 
 2. Requisitos Não Funcionais:
   - Autenticação
@@ -89,4 +64,15 @@ O sistema deve validar as informações.
   - Interface responsiva e adaptativa a diversas resoluções de tela e disposistivos diferentes, como computador, celular e tablet
   - Interface deve ser compativel com os principais navegadores web
   - Criptografar as senhas antes de salvá-las no banco de dados
-  - 
+  - Disponível durante todo o horário de funcionamento da instituição
+  - Restringir acesso pelo tipo de usuário
+
+## REGRAS DE NEGÓCIO
+  - CPF de cada aluno deve ser único
+  - CPF de cada funcionário deve ser único
+  - Email de cada funcionário deve ser único
+  - A matrícula de cada aluno deve ser única 
+  - Nome de cada curso deve ser único
+  - Impedir exclusão de cursos que tenham alunos matrículados
+  - Impedir exclusão de alunos que estejam matrículados em 1 ou mais cursos
+  
